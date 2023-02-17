@@ -1,0 +1,23 @@
+#include<stdio.h>
+main()
+{
+	int i,n,k=1,even=0,odd=0,a;
+	i=1;
+	scanf("%d",&n);
+	scanf("%d",&k);
+	while(i<k)
+	{
+		if(n%k==0)
+		{
+			a=k*i;
+			printf("%d\t",a);
+			i++;
+		}
+		if(a%2==0)
+				even=even+a;
+		else
+				odd=odd+a;
+				a++;
+	}
+	printf("Even sum=%d\nOdd sum=%d\n",even,odd);
+}
